@@ -1,11 +1,14 @@
 Welcome to the Python-tutorial wiki!
 
 Arthur : Vignesh
-Python is an most powerful programming language and it is open source In industries most codes are written in python2 The best versions of python is pyhon-2.7 Because it was compatible with all python2 codes and with much of pyhon3 syntax
+
+Python is an most powerful programming language and it is open source In industries most codes are written in python2 
+The best versions of python is pyhon-2.7 Because it was compatible with all python2 codes and with much of pyhon3 syntax
 
 You can download python source code in : https://www.python.org/ You can practice python in Jupyner notbook : http://jupyter.org/
 
 Downloading Python in Linux ( Cent-OS ):
+========================================
 By default Python2 was available on linux to check use cmd : $python --version
 
 To run python we need some dependency so install that by using cmd : yum group install development tools Download the pyhon source code Go to the downloaded path and extract the tar file the run the file (./config), make install
@@ -13,27 +16,40 @@ To run python we need some dependency so install that by using cmd : yum group i
 Note : Python files should save as .py extension but no need to worry that in linux, linux can run all executable files, for our reference we can save with .py or any identifiable name.
 
 Let's see basics of Pyton:
+===========================
+
 Variables
 Strings
 String formatting
 Built-in-function
 Introduction to OOP
 Methods
+
 Variables
+==========
 Variable is used as an storage location We can store any name or value in variable
 
 Variable has some rules as below:
+=================================
 Variables are case-sensitive # name=xxx, Name=xxx ( here name is one variable and Name is another variable) Variables should start with letter but it can have names # Name=vignesh7323 ( variable is Name and value is vignesh7323) Underscores are allowed in variable # _name=xxx ( valid variable ) +,- are not allowed in variable # +name or -name ( not valid )
 
 Some valid variable names are below:
+======================================
+
 first3letters='ABC' First_three_letters='ABC' firstThreeLetters='ABC'
 
-Name='Vicky' # Vicky was stored in the variable Name print(Name) #o/p -> Vicky print('Name') #o/p -> Name ( it will print the string mentioned inside '' )
+Name='Vicky' # Vicky was stored in the variable Name 
+
+print(Name) #o/p -> Vicky print('Name') #o/p -> Name ( it will print the string mentioned inside '' )
 
 String:
+=========
+
 In Python string should be surrounded by quotes # 'String' or "String" Fruit="Apple" Fruit='Apple' Why and where we use '' and "" Eg : 'she said."This is great"' "That is great"
 
 Indexing:
+==========
+
 String=VICKY 0=V 1=I C=2 K=3 K=4 Y=5 V index is 0 I index is 1 .......
 
 print(string[0]) # o/p -> V
@@ -41,22 +57,36 @@ print(string[0]) # o/p -> V
 String: a p p l e Index : 0 1 2 3 4 a = 'apple'[0] e = 'apple'[4]
 
 Function:
-It is an Section of code that can be reused in program A function is an name that can be called or can be executed by that name Example print() function can print string len() function can count the number of letters in the string Eg : name=vicky print(len(name)) o/p -> 5 # count the string and gives the output
+=========
+
+It is an Section of code that can be reused in program 
+A function is an name that can be called or can be executed by that name 
+Example 
+print() function can print string 
+len() function can count the number of letters in the string Eg : name=vicky print(len(name)) o/p -> 5 # count the string and gives the output
 
 Basic OOP
+=========
+
 1.Everything in Python is an object
 2.Every object has a type
 3.'apple' is an object of type "str"
 4.'apple' is a string object
 5.fruit = 'apple' # fruit is a string object
 6.Methods are functions run against an object
+
 The lower() String Method
+==========================
+
 It will convert the string into lower string Eg : name= 'Vicky' print(name.lower()) -> O/p : vicky # V is converted to lower string as v
 
 The upper() String Method # Same as above it will convert the lower string into upper string
 
 String Concatenation
+=====================
+
 Combining strings
+
 Eg : print('I ' + 'love ' + 'India.') # O/P -> I love India.
 
 first="I"
@@ -70,6 +100,8 @@ sentence = first + ' ' + second + ' ' + third + '.'
 print(sentence) # o/p -> I love India .
 
 Repeating Strings
+===================
+
 It will repeat the string
 
 Eg : name= 'Vicky' * 3
@@ -94,22 +126,29 @@ Formatting Strings Alignment
 
 ^ Center
 
-Right
+> Right
 
 Formatting Strings - Data Types
+================================
+
 f Float
 
 .Nf N = The number of decimal places
 
 Getting User Input
+=====================
+
 Get the users input input() Accepts Standard Input
 
 Eg : Name=input('enter your name:')
 
 print(Name) #O/P -> enter your name:vignesh
-
-                vignesh
+                     vignesh
+                
 Simple calculator program:
+===========================
+
+
 def calculator():
 
 a=int(input('Enter first number: '))
@@ -139,15 +178,19 @@ elif choice == '4':
 else:
 
     print("Invalid Input")
-calculator()
+calculator() # Here calling the function
 
 Operators:
+==========
+
 Booleans
 Comparators
 Order of operations
 Code blocks
 Conditionals
+
 Boolean:
+========
 
 While assigning boolean to a variable don't mention quotes ''
 
@@ -155,30 +198,31 @@ Since quotes are used to mention string
 
 Eg : a_boolean = True
 
- Other_boolean = False
+     Other_boolean = False
 
- print(a_boolean)
+     print(a_boolean)
 
- print(Other_boolean)
+     print(Other_boolean)
 
- O/p -> True
+      O/p -> True
 
         False
+        
 comparators
+============
+
 Operator Description
 
 == Equal to
-
-          Greater than
-= Greater than or equal to
-
+>  Greater than
+=  Greater than or equal to
 < Less than
-
 <= Less than or equal to
-
 != Not equal
 
 Boolean operators
+===================
+
 and -> Evaluates to True if both statements are True otherwise evaluates to False
 
 or -> Evaluates to True if either of the statements is True
@@ -186,6 +230,8 @@ or -> Evaluates to True if either of the statements is True
 not -> Evaluates to the opposite of the statements
 
 Truth table
+============
+
 True and True = True
 
 True and False = False
@@ -201,9 +247,10 @@ False or True = True
 False or False = False
 
 Conditionals:
+=============
 if 37<40: #boolean is true
 
-print('Thirty-seven is less than Forty') # Execute the print statement
+      print('Thirty-seven is less than Forty') # Execute the print statement
 
 print('Have a nice day') # This print statement will also print because it was outside the function
 
